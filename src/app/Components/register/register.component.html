@@ -1,0 +1,280 @@
+
+<!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1
+            class="my-5 display-5 fw-bold ls-tight"
+            style="color: hsl(218, 81%, 95%)"  >
+            The First Step <br />
+            <span style="color: hsl(218, 81%, 75%)"> on your Way</span><br />
+            <span style="color: hsl(218, 81%, 95%)"> to learn English</span>
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            Your goal, your journey. Build confidence in your English skills
+            wherever you plan to use them. Our complete English language course is
+            clearly set out, with interactive vocab, grammar and cultural know-how
+            for all skill levels, in focused bite-sized lessons.
+          </p>
+        </div>
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div
+            id="radius-shape-1"
+            class="position-absolute rounded-circle shadow-5-strong"  ></div>
+          <div
+            id="radius-shape-2"
+            class="position-absolute shadow-5-strong"></div>
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form
+                (ngSubmit)="handleregister(registerForm)"
+                [formGroup]="registerForm" >
+                <!-- FirstName input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="FirstName">First Name</label>
+                  <input
+                    formControlName="FirstName"
+                    type="text"
+                    class="form-control"  />
+                </div>
+  
+                <!-- LastName input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="LastName">Last Name</label>
+                  <input
+                    formControlName="LastName"
+                    type="text"
+                    class="form-control"/>
+                </div>
+  
+                <!-- UserName input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="UserName">UserName</label>
+                  <input
+                    formControlName="UserName"
+                    type="text"
+                    class="form-control"  />
+                </div>
+  
+                <!-- Email input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="Email">Email Address</label>
+                  <input
+                    formControlName="Email"
+                    type="email"
+                    class="form-control"  />
+                </div>
+  
+                <!-- Password input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="Password">Password</label>
+                  <input
+                    formControlName="Password"
+                    type="password"
+                    class="form-control"/>
+                </div>
+  
+                <!-- Confirm Password input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="ConfirmPassword">Confirm Password</label>
+                  <input
+                    formControlName="ConfirmPassword"
+                    type="password"
+                    class="form-control"/>
+                </div>
+  
+                <!-- Confirm Password input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="PhoneNumber">Phone Number</label>
+                  <input
+                    formControlName="PhoneNumber"
+                    type="text"
+                    class="form-control" />
+                </div>
+                <!-- Confirm Password input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="StudyPlan">Study Plan</label>
+                  <select
+                    formControlName="StudyPlan"
+                    type="text"
+                    class="form-control"  >
+                    <option value="private">Private</option>
+                    <option value="group">Group</option>
+                  </select>
+                </div>
+  
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example33"
+                    checked />
+                  <label class="form-check-label" for="form2Example33">
+                    Subscribe to our newsletter
+                  </label>
+                </div>
+  
+                <!-- Submit button -->
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Sign up
+                  </button>
+                </div>
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <a
+                    class="btn btn-link btn-floating mx-1"
+                    href="https://www.facebook.com/"  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    class="btn btn-link btn-floating mx-1"
+                    href="https://myaccount.google.com/" >
+                    <i class="fab fa-google"></i>
+                  </a>
+                  <a
+                    class="btn btn-link btn-floating mx-1"
+                    href="https://twitter.com/?lang=en">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Section: Design Block
+<section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                    The First Step <br />
+                    <span style="color: hsl(218, 81%, 75%)"> on your Way</span><br />
+                    <span style="color: hsl(218, 81%, 95%)"> to learn English</span>
+                </h1>
+                <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                    Your goal, your journey. Build confidence in your English skills wherever you plan to use them.
+                    Our complete English language course is clearly set out, with interactive vocab,
+                    grammar and cultural know-how for all skill levels, in focused bite-sized lessons.
+                </p>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <form (ngSubmit)="handleregister(registerForm)" [formGroup]="registerForm">
+
+                            <!-- UserName input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <input formControlName="Firstname" type="text" id="form3Example3" class="form-control" />
+                                <label class="form-label" for="userName">FirstName</label>
+                            </div> -->
+
+                            <!-- UserName input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <input formControlName="Lastname" type="text" id="form3Example3" class="form-control" />
+                                <label class="form-label" for="userName">LastName</label>
+                            </div> -->
+
+                            <!-- Email input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <input formControlName="Email" type="email" id="form3Example3" class="form-control" />
+                                <label class="form-label" for="email">Email address</label>
+                            </div> -->
+
+                            <!-- Password input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <input formControlName="password" type="password" id="form3Example4"
+                                    class="form-control" />
+                                <label class="form-label" for="password">Password</label>
+                            </div> -->
+
+                            <!-- Confirm Password input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <input formControlName="Confirmpassword" type="password" id="form3Example4"
+                                    class="form-control" />
+                                <label class="form-label" for="Confirmpassword">Confirm Password</label>
+                            </div> -->
+
+                            <!-- Confirm Password input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <input formControlName="phoneNumber" type="text" id="form3Example4"
+                                    class="form-control" />
+                                <label class="form-label" for="phoneNumber">Phone Number</label>
+                            </div> -->
+                            <!-- Confirm Password input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <select formControlName="Plan" type="text" id="form3Example4"
+                                    class="form-control" >
+                                    <option value="0">Private</option>
+                                    <option value="1">Group</option>
+                                </select>
+                                <label class="form-label" for="Plan">Plan</label>
+                            </div> -->
+
+                            <!-- Checkbox -->
+                            <!-- <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"
+                                    checked />
+                                <label class="form-check-label" for="form2Example33">
+                                    Subscribe to our newsletter
+                                </label>
+                            </div> -->
+
+                            <!-- Submit button -->
+                            <!-- <div class="form-group">
+                                <button [disabled]="registerForm.invalid"  type="submit" class="btn btn-primary btn-block mb-4">
+                                    <i *ngIf="isloading" class="fas fa-spinner fa-spin"></i>
+                                    <span *ngIf="!isloading">Sign Up</span>
+                                </button>
+                            </div> -->
+                            <!-- Register buttons -->
+                            <!-- <div class="text-center">
+                                <p>or sign up with:</p>
+                                <a class="btn btn-link btn-floating mx-1" href="https://www.facebook.com/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-link btn-floating mx-1" href="https://myaccount.google.com/">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a class="btn btn-link btn-floating mx-1" href="https://twitter.com/?lang=en">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->

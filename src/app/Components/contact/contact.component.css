@@ -1,0 +1,119 @@
+
+.sectionHeader {
+    height: 50vh;
+    background-image: url("../../../assets/images/sectionHeaderImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+}
+
+.text-right {
+    position: absolute;
+    top: 52%;
+    left: 43%;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.text-right li {
+    padding: 10px;
+}
+.text-right li  a{
+text-decoration: none;
+color: black;
+}
+
+#contblue {
+    color: blueviolet;
+}
+
+.container {
+    padding:0%;
+align-items: center;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  height: 600px;
+}
+
+
+
+/* Style for the main container */
+
+  
+  /* Style for the "Send Me Message" section */
+  #contact h1 {
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form select
+  {
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  form textarea{
+    padding: 10px;
+    margin: 10px 0;
+    width: 700px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Style for the "Get In Touch" section */
+ 
+  
+  /* Style for the horizontal line */
+  .vertical-line {
+    border-left: 100px black; /* Vertical line style and color */
+    height: 100%;
+    background-color: black;
+
+  }
+
+  .data-agreement {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+
+
+
+
+
+.iframe {
+    width: 100%;
+    height: 550px; 
+    margin-top: -300px;
+}

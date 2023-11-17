@@ -1,0 +1,25 @@
+.special-text {
+    border-left: none;
+    border-top: 2px solid #D2093C;
+}
+.text-container {
+    margin: auto;
+}
+
+@media screen and (min-width:992px) {
+    .text-container {
+        width: 50%;
+        margin: auto;
+    }
+    
+}
+
+.slider-review {
+    background-color: #f5f5f5;
+}
+
+.img-container {
+    width: 40px;
+    height: 40px;
+
+}

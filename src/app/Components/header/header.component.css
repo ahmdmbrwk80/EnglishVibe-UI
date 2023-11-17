@@ -1,0 +1,28 @@
+.headerContainer {
+    background-color: #bbe8eb;
+}
+
+@media screen and (max-width:991px)  and (min-width:768px){
+    .firstDiv > div {
+        max-width: 75%;
+    }
+}
+
+.animation-container {
+    bottom: 40%;
+    right: 0;
+    animation: hero-upDown-1 3s linear 0s infinite alternate;
+}
+
+.static-container {
+    bottom: 30%;
+    left: 0;
+    max-width: 55%;
+}
+.static-container p {
+    font-size: 13px;
+}
+.circular--square{
+
+    border-radius: 50%;
+}

@@ -1,0 +1,192 @@
+<!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div
+        class="d-flex gx-lg-5 align-items-center justify-content-center mb-5 w-md-50 w-100"  >
+        <div class="mb-5 mb-lg-0 position-relative">
+          <div
+            id="radius-shape-1"
+            class="position-absolute rounded-circle shadow-5-strong" ></div>
+          <div
+            id="radius-shape-2"
+            class="position-absolute shadow-5-strong"  ></div>
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <h3>Login</h3>
+              <form (ngSubmit)="handlelogin(loginForm)" [formGroup]="loginForm">
+                <!-- Email input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="Email">Email address</label>
+                  <input
+                    formControlName="Email"
+                    type="email"
+                    id="form3Example3"
+                    class="form-control"/>
+                  <div
+                    *ngIf="
+                      loginForm.get('Email')?.errors &&
+                      loginForm.get('Email')?.touched ">
+                    <p
+                      *ngIf="loginForm.get('Email')?.getError('required')"
+                      class="m-0 p-0">
+                      email is required
+                    </p>
+                    <p
+                      *ngIf="loginForm.get('Email')?.getError('Email')"
+                      class="m-0 p-0">
+                      email isnt correct
+                    </p>
+                  </div>
+                </div>
+  
+                <!-- Password input -->
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="Password">Password</label>
+                  <input
+                    formControlName="Password"
+                    type="password"
+                    id="form3Example4"
+                    class="form-control"  />
+                  <div
+                    *ngIf="
+                      loginForm.get('password')?.errors &&
+                      loginForm.get('password')?.touched
+                    ">
+                    <p
+                      *ngIf="loginForm.get('password')?.getError('required')"
+                      class="m-0 p-0"   >
+                      password is required
+                    </p>
+                    <p
+                      *ngIf="loginForm.get('password')?.getError('pattern')"
+                      class="m-0 p-0" >
+                      password is pattern
+                    </p>
+                  </div>
+                </div>
+  
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example33"
+                    checked />
+                  <label class="form-check-label" for="form2Example33">
+                    Subscribe to our newsletter
+                  </label>
+                </div>
+  
+                <!-- Submit button -->
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    <i *ngIf="isloading" class="fas fa-spinner fa-spin"></i>
+                    <span *ngIf="!isloading">Login</span>
+                  </button>
+                </div>
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <a
+                    class="btn btn-link btn-floating mx-1"
+                    href="https://www.facebook.com/" >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    class="btn btn-link btn-floating mx-1"
+                    href="https://myaccount.google.com/" >
+                    <i class="fab fa-google"></i>
+                  </a>
+                  <a
+                    class="btn btn-link btn-floating mx-1"
+                    href="https://twitter.com/?lang=en">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+<!-- Section: Design Block -->
+<!-- <section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="d-flex gx-lg-5 align-items-center justify-content-center mb-5 w-md-50 w-100">
+            <div class="mb-5 mb-lg-0 position-relative">
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <h3>Login</h3>
+                        <div *ngIf="apierror" class="alert alert-danger">
+                            {{apierror}}
+                                </div>
+                        <form (ngSubmit)="handlelogin(loginForm)" [formGroup]="loginForm">
+                            <!-- Email input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <input formControlName="Email" type="email" id="form3Example3" class="form-control" />
+                                <label class="form-label" for="email">Email address</label>
+                                <div *ngIf="loginForm.get('Email')?.errors && loginForm.get('Email')?.touched">
+                                    <p *ngIf="loginForm.get('Email')?.getError('required')" class="m-0 p-0">email is required</p>
+                                    <p *ngIf="loginForm.get('Email')?.getError('Email')" class="m-0 p-0">email isnt correct</p>
+                            
+                                </div>
+                            </div> --> 
+
+                            <!-- Password input -->
+                            <!-- <div class="form-outline form-group mb-4">
+                                <input formControlName="password" type="password" id="form3Example4"
+                                    class="form-control" />
+                                <label class="form-label" for="password">Password</label>
+                                <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched">
+                                    <p *ngIf="loginForm.get('password')?.getError('required')" class="m-0 p-0">password is required</p>
+                                    <p *ngIf="loginForm.get('password')?.getError('pattern')" class="m-0 p-0">password is pattern</p>
+                                </div>
+                            </div> -->
+
+                            <!-- Checkbox -->
+                            <!-- <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"
+                                    checked />
+                                <label class="form-check-label" for="form2Example33">
+                                    Subscribe to our newsletter
+                                </label>
+                            </div> -->
+
+                            <!-- Submit button -->
+                            <!-- <div class="form-group">
+                                <button [disabled]="loginForm.invalid"  type="submit" class="btn btn-primary btn-block mb-4">
+                                    <i *ngIf="isloading" class="fas fa-spinner fa-spin"></i>
+                                    <span *ngIf="!isloading">Login</span>
+                                </button>
+                            </div> -->
+                            <!-- Register buttons -->
+                            <!-- <div class="text-center">
+                                <p>or sign up with:</p>
+                                <a class="btn btn-link btn-floating mx-1" href="https://www.facebook.com/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-link btn-floating mx-1" href="https://myaccount.google.com/">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a class="btn btn-link btn-floating mx-1" href="https://twitter.com/?lang=en">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->

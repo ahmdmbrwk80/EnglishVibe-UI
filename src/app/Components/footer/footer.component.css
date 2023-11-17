@@ -1,0 +1,51 @@
+/* .social-container i:hover {
+    color: #fff;
+    background-color: #1268EB;
+    border-color: transparent;
+}
+.social-container i {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    border-radius: 4px;
+    color: rgba(30, 30, 30, 0.3);
+    border: 1px solid rgba(30, 30, 30, 0.3);
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    transition: 0.5s;
+}
+a {
+    transition: 0.5s;
+}
+a:hover {
+    color: #1268EB !important;
+} */
+
+
+.list{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+    transition: all 0.5s ease;
+}
+.list:hover{
+    color: #FFA121;
+    padding-left: 10px ;
+    font-size: 18px;    
+}
+
+.Social a{
+
+    transition: transform .2s; /* Animation */
+
+}
+.Social a :hover{
+
+    color: #FFA121;
+    transform: scale(1.5);
+
+
+
+}

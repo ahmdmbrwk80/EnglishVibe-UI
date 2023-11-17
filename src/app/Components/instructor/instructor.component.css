@@ -1,0 +1,20 @@
+.inscontainer {
+    background-image: url("../../../assets/images/instructorBgImg.jpg");
+    background-size: cover;
+}
+.containerOverlay:hover .insOverlay{
+top: 60%;
+}
+.containerOverlay:hover img {
+    transform: scale(1.2);
+}
+.containerOverlay img {
+    transition: 1s;
+}
+.insOverlay {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    transition: 1s;
+}

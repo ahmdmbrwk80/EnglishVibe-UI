@@ -1,0 +1,51 @@
+.sectionHeader {
+    height: 50vh;
+    background-image: url("../../../assets/images/sectionHeaderImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+
+
+.textIcon {
+    color: #1e1e1e99;
+    }
+    .imgContainer img {
+        transition: 1s;
+    }
+    .imgContainer img:hover {
+        transform: scale(1.2);
+    }
+ 
+    .card{
+        border: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  height: 600px;
+    }
+
+
+
+
+
+    .custom-button {
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 5px;
+        width: 150px;
+        margin-left: 15px;
+
+    }
+    
+    .custom-button:hover {
+        background-color: #0074d9;
+        color: white;
+    }
+    
+

@@ -1,0 +1,15 @@
+.animation-container {
+    bottom: 10%;
+    left: 50%;
+    animation: hero-upDown-1 3s linear 0s infinite alternate;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #000;
+}

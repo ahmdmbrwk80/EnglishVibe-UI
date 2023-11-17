@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --fw-500:500;
+    --color-start:#FFA121;
+    --color-main: #D2093C;
+    --color-primary: #1268EB;
+    --bg-special:#d2093b0a;
+    --bg-light:#f3f4fd;
+    --fs-50:50px;
+    --fs-13:13px;
+}
+.text-star {
+    color: var(--color-start);
+}
+.text-main {
+    color: var(--color-main);
+}
+.text-global {
+    color: var(--color-primary) !important;
+}
+.bg-special {
+    background-color: var(--bg-special);
+}
+.bg-light {
+    background-color: var(--bg-light);
+}
+.fw-500 {
+    font-weight: var(--fw-500);
+}
+.fs-50 {
+    font-size: 50px;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.box-shadow {
+    box-shadow: 0px 10px 40px rgba(30, 30, 30, 0.1);
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+p {
+    color: rgba(30, 30, 30, 0.6);
+}
+
+.special-text {
+    width: fit-content;
+    color: #D2093C;
+    border-left: 2px solid #D2093C;
+}
+
+
+@keyframes hero-upDown-1 {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+.owl-theme .owl-nav {
+    display: flex !important;
+    justify-content: center;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 2px 0px #E1E2E6;
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    color: #1E1E1E;
+    transition: all 0.4s linear 0s;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: #1268EB;
+    color: #fff;
+}
+.owl-theme .owl-nav [class*=owl-]::before {
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.owl-carousel .owl-nav .owl-next::before {
+    content: "\f061";
+}
+.owl-carousel .owl-nav .owl-prev::before {
+    content: "\f060";
+}
